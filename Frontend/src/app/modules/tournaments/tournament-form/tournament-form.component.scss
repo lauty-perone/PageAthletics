@@ -1,0 +1,27 @@
+.inscripcion-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 110px;
+  }
+  
+  .inscripcion-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .inscripcion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .prueba-item {
+    margin-bottom: 15px;
+  }
+  
+  .prueba-field {
+    width: 100%;
+  }
+  

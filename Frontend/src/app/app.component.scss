@@ -1,0 +1,18 @@
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column; /* Organiza en una columna */
+    min-height: 100vh; /* Asegura que la altura del contenedor sea igual al viewport */
+  }
+  
+  .content {
+    flex: 1; /* Ocupa todo el espacio disponible */
+  }
+  
+  

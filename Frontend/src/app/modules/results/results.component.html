@@ -1,0 +1,19 @@
+<div class="tournament-list">
+    <mat-card *ngFor="let tournament of tournaments" class="tournament-card">
+      <mat-card-header>
+        <mat-card-title>{{ tournament.name }}</mat-card-title>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <p><strong>Fecha:</strong> {{ tournament.fechaTorneo | date:'dd/MM/yyyy'}}</p>
+        <p><strong>Lugar:</strong> {{ tournament.lugar }}</p>
+      </mat-card-content>
+  
+      <mat-card-actions>
+        <a mat-button color="primary" href="{{ tournament.resultadosUrl }}" target="_blank">
+          Ver resultados
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; /* Mantiene el header fijo en la parte superior */
+  top: 0;
+  right: 0%;
+  z-index: 1000; /* Asegura que el header esté encima del resto del contenido */
+  background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+  width: 100%;
+}
+
+.logo {
+  background-color: transparent; /* Asegúrate de que el botón no tenga fondo */
+  border: none; /* Evita que el botón tenga bordes visibles */
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease; /* Efecto hover */
+  cursor: pointer;
+}
+
+.logo img:hover {
+  transform: scale(1.2); /* Aumenta tamaño */
+}
+
+.nav-buttons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, text-decoration 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  transform: scale(1.1);
+}
+
+.user-login {
+  background: none;
+  border: 1px solid rgb(5, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-login:hover {
+  background-color: white;
+  color: black; /* Inversión de colores */
+
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px; /* Altura del subrayado */
+  background-color: white; /* Color del subrayado */
+  transition: width 0.3s ease; /* Animación suave */
+}
+
+.nav-links:hover::after {
+  width: 100%; /* Extiende el subrayado completamente */
+}
+
+.backgroundImage {
+  position: absolute; /* Permite posicionar la imagen detrás del header */
+  top: 0; /* Comienza desde la parte superior de la página */
+  width: 100%; /* Ocupa todo el ancho */
+  z-index: -1; /* Se asegura de que esté detrás del header */
+  filter: grayscale(0); //Blanco Y Negro
+  height: auto;
+  
+}
+
+
+
+
+
+
+
+
+

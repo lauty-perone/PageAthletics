@@ -1,0 +1,65 @@
+<div class="contenedor">
+    
+    <div class="form-container">
+
+        <h2 class="titulo-formulario">Crear Torneo</h2>
+        <form [formGroup]="torneoForm">
+          <div class="form-grid">
+            <mat-form-field appearance="outline">
+              <mat-label>Nombre del Torneo</mat-label>
+              <input matInput formControlName="name">
+            </mat-form-field>
+      
+            <mat-form-field appearance="outline">
+                <mat-label>Fecha del Torneo</mat-label>
+                <input matInput [matDatepicker]="pickerTorneo" formControlName="fechaTorneo">
+                <mat-datepicker-toggle matSuffix [for]="pickerTorneo"></mat-datepicker-toggle>
+                <mat-datepicker #pickerTorneo></mat-datepicker>
+              </mat-form-field>
+      
+            <mat-form-field appearance="outline">
+              <mat-label>Lugar</mat-label>
+              <input matInput formControlName="lugar">
+            </mat-form-field>
+      
+            <mat-form-field appearance="outline">
+              <mat-label>Cantidad de Carriles</mat-label>
+              <input matInput type="number" formControlName="cantidadCarriles" min="1">
+            </mat-form-field>
+      
+            <mat-form-field appearance="outline">
+                <mat-label>Fecha de Inicio de Inscripción</mat-label>
+                <input matInput [matDatepicker]="pickerInicio" formControlName="fechaInicioInscripcion">
+                <mat-datepicker-toggle matSuffix [for]="pickerInicio"></mat-datepicker-toggle>
+                <mat-datepicker #pickerInicio></mat-datepicker>
+              </mat-form-field>
+              
+              <mat-form-field appearance="outline">
+                <mat-label>Fecha de Fin de Inscripción</mat-label>
+                <input matInput [matDatepicker]="pickerFin" formControlName="fechaFinInscripcion">
+                <mat-datepicker-toggle matSuffix [for]="pickerFin"></mat-datepicker-toggle>
+                <mat-datepicker #pickerFin></mat-datepicker>
+              </mat-form-field>
+      
+            <mat-form-field appearance="outline">
+              <mat-label>Resultados (Google Drive)</mat-label>
+              <input matInput type="url" formControlName="resultadosUrl">
+            </mat-form-field>
+      
+            <mat-form-field appearance="outline">
+              <mat-label>Pruebas del Torneo</mat-label>
+              <mat-select formControlName="pruebas" multiple>
+                <mat-option *ngFor="let prueba of pruebasDisponibles" [value]="prueba">{{ prueba }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+      
+          <div class="button-group">
+            <button mat-button color="warn" routerLink="/">Cancelar</button>
+            <button mat-raised-button color="primary" (click)="guardar()"
+                routerLink="/torneos">Guardar</button>
+          </div>
+        </form>
+      </div>
+</div>
+  

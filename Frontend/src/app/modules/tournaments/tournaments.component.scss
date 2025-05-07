@@ -1,0 +1,54 @@
+.tournament-list {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 100px;
+  }
+  
+  .tournament-card {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-abierto {
+    background-color: #24a528; /* Verde más suave */
+    color: white;
+    cursor: pointer;
+    border: none; /* Elimina bordes predeterminados */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente más legible */
+    font-weight: 500; /* Refuerza la apariencia del texto */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease-in-out; /* Animación de transición */
+  }
+  
+  .btn-abierto:hover {
+    background-color: #167f14; /* Cambio de color al pasar el mouse */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Intensifica la sombra */
+  }
+  
+  .btn-cerrado {
+    background-color: #f44336; /* Rojo más atractivo */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: not-allowed; /* Indicador visual de que está deshabilitado */
+    opacity: 0.7; /* Reduce la intensidad visual */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  

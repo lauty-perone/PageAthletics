@@ -1,0 +1,34 @@
+<div class="inscripcion-container">
+    <mat-card class="inscripcion-card">
+      <mat-card-header>
+        <mat-card-title>Inscripción al Torneo</mat-card-title>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <form [formGroup]="inscripcionForm" class="inscripcion-form">
+          <div *ngFor="let prueba of pruebas" class="prueba-item">
+            <mat-form-field appearance="outline" class="prueba-field">
+              <mat-label>{{ prueba.nombre }}</mat-label>
+              <input matInput 
+                     type="text" 
+                     [formControlName]="prueba.id" 
+                     placeholder="Ingrese su marca">
+            </mat-form-field>
+          </div>
+          <mat-error *ngIf="inscripcionForm.touched">
+            Por favor, ingrese al menos una marca.
+          </mat-error>
+        </form>
+      </mat-card-content>
+  
+      <mat-card-actions>
+        <button mat-raised-button 
+                color="primary" 
+                [disabled]="!inscripcionForm.valid" 
+                (click)="onSubmit()">
+          Enviar Inscripción
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

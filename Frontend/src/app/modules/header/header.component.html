@@ -1,0 +1,29 @@
+<mat-toolbar class="header">
+  <button routerLink="/" class="logo">
+    <img src="img/u.png" alt="Logo" class="img-logo"> 
+  </button>
+  <ul class="nav-buttons">
+    <li><button routerLink="/noticias" class="nav-links">Noticias</button></li>
+    <li><button routerLink="/atletas" class="nav-links">Atletas</button></li>
+    <li><button routerLink="/resultados" class="nav-links">Resultados</button></li>
+    <li><button routerLink="/torneos" class="nav-links">Torneos</button></li>
+    <li><button routerLink="/contacto" class="nav-links">Contacto</button></li>
+  </ul>
+  <!-- Botón de Login con Mat-Menu -->
+  <button mat-fab class="user-login" [matMenuTriggerFor]="menu">
+    <mat-icon>perm_identity</mat-icon>
+  </button>
+  
+  <!-- Menú Desplegable -->
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/perfil">Perfil</button>
+    <button mat-menu-item routerLink="/crearTorneo">Crear Torneo</button>
+    <button mat-menu-item routerLink="/agregarInscripcion">Agregar inscripción</button>
+    <button mat-menu-item routerLink="/agregarClub">Agregar Club</button>
+    <button mat-menu-item routerLink="/configuracion">Configuración</button>
+    <button mat-menu-item routerLink="/logout">Cerrar Sesión</button>
+  </mat-menu>
+</mat-toolbar>
+
+
+

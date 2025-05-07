@@ -1,0 +1,47 @@
+.athletes-list {
+  padding: 110px;
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+}
+
+.table-container {
+  width: 80%; /* Limita el ancho de la tabla y el paginador */
+  max-width: 900px; /* Establece un ancho máximo */
+  display: flex;
+  flex-direction: column; /* Coloca el paginador debajo de la tabla */
+}
+
+.mat-elevation-z8 {
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que no haya desbordamientos */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Suaviza la sombra */
+  margin-bottom: 10px; /* Espacio entre la tabla y el paginador */
+}
+
+mat-paginator {
+  display: flex;
+  justify-content: center; /* Centra el paginador */
+  margin-top: 10px; /* Espacio adicional para separar la tabla */
+  border-radius: 8px;
+}
+
+.mensaje-no-existen-datos {
+  display: flex; /* Para alinear el ícono y el texto */
+  align-items: center; /* Centra verticalmente el ícono y el texto */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  height: 50px; /* Define una altura para la fila */
+  font-size: 16px; /* Tamaño de fuente agradable */
+  font-weight: 500; /* Texto con peso moderado */
+  color: #9e9e9e; /* Color gris suave */
+  border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+}
+
+.mat-icon {
+  font-size: 20px; /* Tamaño del ícono */
+  color: #d32f2f; /* Color rojo para resaltar el ícono de error */
+}
+
+.mx-3 {
+  margin: 0 12px; /* Espaciado horizontal */
+}
+

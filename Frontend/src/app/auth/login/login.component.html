@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Login Form </title>
+</head>
+<body>
+      
+      <div class="login">
+        <img src="img/loginBack.jpg" alt="login image" class="login__img">
+        <form action="" class="login__form">
+          <button class="Close" routerLink="/">
+            <mat-icon>close</mat-icon>
+          </button>
+
+          <h1 class="login__title">Iniciar Sesión</h1>
+          
+          <div class="login__content">
+            <div class="login__box">
+              <i class="bx bx-lock-alt"></i>
+              
+              <div class="login__box-input">
+                <input type="email" required class="login__input" placeholder="">
+                <label for="" class="login__label">Nombre de usuario</label>
+              </div>
+            </div>
+
+            <div class="login__box">
+              <i class="ri-lock-2-line login__icon"></i>
+
+
+              <div class="login__box-input">
+                <input type="password" required class="login__input" id="login-pas" placeholder="">
+                <label for="" class="login__label">Contraseña</label>
+                <i class="ri-eye-off-line login__eye"></i>
+               </div>
+            </div>
+          </div>
+
+          <div class="login__check">
+            <div class="login__check-group">
+              <input type="checkbox" class="login__check-input">
+              <label for="" class="login__check-label">Recordarme</label>
+            </div>
+
+              <a class="login__forgot">¿Olvidaste tu contraseña?</a>
+          </div>
+
+        <button class="login__button">Iniciar Sesión</button>
+
+          <p class="login__register">
+            ¿No tienes cuenta? <a >Registrarme</a>
+          </p>
+        </form>
+      </div>
+</body>
+</html>
