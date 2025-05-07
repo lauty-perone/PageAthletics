@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+      {
+        "name": "Pagina Atletismo",
+        "configurations": ["Frontend PaginaAtletismo", "Start Backend"]
+      }
+    ],
+    "configurations": [
+      {
+        "name": "Frontend PaginaAtletismo",
+        "request": "launch",
+        "type": "node",
+        "program": "${workspaceFolder}/Frontend/node_modules/.bin/ng",
+        "args": ["serve"],
+        "cwd": "${workspaceFolder}/Frontend"
+      },
+      {
+        "name": "Start Backend",
+        "type": "coreclr",
+        "request": "launch",
+        "program": "${workspaceFolder}/Backend/PaginaAtletismo Backend/bin/Debug/net9.0/PaginaAtletismo Backend.dll",
+        "cwd": "${workspaceFolder}/Backend"
+      }
+    ]
+  }
+  

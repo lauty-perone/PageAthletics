@@ -1,10 +1,22 @@
 using PaginaAtletismo_Backend.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Agregar servicios al contenedor
 builder.Services.AddControllers();
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mi API", Version = "v1" });
+});
+
+// Configurar Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -18,30 +30,29 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://localhost:4200") // Permitir solicitudes desde Angular
               .AllowAnyHeader()  // Permitir cualquier encabezado HTTP
-              .AllowAnyMethod(); // Permitir cualquier m�todo (GET, POST, etc.)
+              .AllowAnyMethod(); // Permitir cualquier método (GET, POST, etc.)
     });
 });
 
 
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
-// Aplicar la pol�tica de CORS antes de los controladores
+// Aplicar la política de CORS antes de los controladores
 app.UseCors("PermitirAngular");
 
 app.UseHttpsRedirection();
 app.UseRouting();
-
-
-
 app.UseAuthorization();
+
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction()) // Habilitar en producción si es necesario
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mi API V1");
+    });
+}
 
 app.MapStaticAssets();
 
@@ -50,5 +61,15 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+// Middleware para redirigir automáticamente a Swagger cuando se accede a la raíz
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/")
+    {
+        context.Response.Redirect("/swagger");
+        return;
+    }
+    await next();
+});
 
 app.Run();

@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 
 export class TournamentsService {
 
-  private apiUrl = 'https://localhost:44379/api/torneo'; 
+  private apiUrl = 'https://localhost:5000/api/torneo'; 
 
   constructor(private http: HttpClient) {}
 
