@@ -1,34 +1,32 @@
-<div class="inscripcion-container">
-    <mat-card class="inscripcion-card">
-      <mat-card-header>
-        <mat-card-title>Inscripción al Torneo</mat-card-title>
-      </mat-card-header>
-  
-      <mat-card-content>
-        <form [formGroup]="inscripcionForm" class="inscripcion-form">
-          <div *ngFor="let prueba of pruebas" class="prueba-item">
-            <mat-form-field appearance="outline" class="prueba-field">
-              <mat-label>{{ prueba.nombre }}</mat-label>
-              <input matInput 
-                     type="text" 
-                     [formControlName]="prueba.id" 
-                     placeholder="Ingrese su marca">
-            </mat-form-field>
-          </div>
-          <mat-error *ngIf="inscripcionForm.touched">
-            Por favor, ingrese al menos una marca.
-          </mat-error>
-        </form>
-      </mat-card-content>
-  
-      <mat-card-actions>
-        <button mat-raised-button 
-                color="primary" 
-                [disabled]="!inscripcionForm.valid" 
-                (click)="onSubmit()">
-          Enviar Inscripción
-        </button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-  
+<ng-container >
+<div class="tournament-registration">
+  <mat-card class="registration-card">
+    <mat-card-header *ngIf="selectedTournament">
+      <mat-card-title>Inscripción - {{ selectedTournament.name }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p><strong>Lugar:</strong> {{ selectedTournament.lugar }}</p>
+      <p><strong>Fecha:</strong> {{ selectedTournament.fechaTorneo | date:'dd/MM/yyyy' }}</p>
+
+      <h3>Pruebas disponibles:</h3>
+      
+        <mat-list-item *ngFor="let prueba of selectedTournament.pruebas">
+          <mat-checkbox class="prueba-texto">{{ prueba }}</mat-checkbox>
+          <mat-form-field class="marca-input">
+            <mat-label>Marca registrada</mat-label>
+            <input matInput type="time"> 
+          </mat-form-field>
+        </mat-list-item>
+        
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="inscribirse()">
+        Inscribirse
+      </button>
+      <button mat-button color="warn" routerLink="/torneos">Cancelar</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</ng-container>

@@ -3,10 +3,11 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { MatCell, MatHeaderCell, MatTableDataSource, MatTableModule } from '@angular/material/table';
 import {  PersonaService } from '../../services/Persona.service';
 import {  MatIconModule } from '@angular/material/icon';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { Persona } from '../../models/Persona';
 
 @Component({
   selector: 'app-athletes',
@@ -21,7 +22,8 @@ import { MatInputModule } from '@angular/material/input';
     MatPaginatorModule,
     MatFormField,
     MatLabel,
-    MatInputModule
+    MatInputModule,
+    FormsModule
     
   ],
   templateUrl: './athletes.component.html',
@@ -31,7 +33,7 @@ import { MatInputModule } from '@angular/material/input';
 export class AthletesComponent implements OnInit{
   
   displayedColumns: string[] = ['name', 'fechaNacimiento', 'club'];
-  dataSource = new MatTableDataSource<any>();
+  dataSource = new MatTableDataSource<Persona>();
 
   textoBusqueda = '';
   
@@ -59,6 +61,15 @@ export class AthletesComponent implements OnInit{
     this.numeroDePagina = event.pageIndex;
 
     this.LeerTodo();
+  }
+
+  LeerTodoEvento(event : Event){
+      this.personaService.LeerTodo(this.cantidadPorPagina, this.numeroDePagina, this.textoBusqueda )
+      .subscribe((respuesta: any) => { 
+         this.dataSource.data = respuesta.datos;
+         this.cantidadTotal = respuesta.totalRegistros; 
+      });
+      console.log(this.textoBusqueda)
   }
 
 }

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { InstagramService } from '../../services/instagram.service';
 
 @Component({
   selector: 'app-news',
@@ -13,6 +14,12 @@ import { MatCardModule } from '@angular/material/card';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NewsComponent {
+  
+  publicaciones: any[] = [];
+
+  constructor(private instagramService : InstagramService){
+  }
+  
   posts = [
     {
       image: 'img/unlp.png',
@@ -60,4 +67,10 @@ export class NewsComponent {
       description: 'Esto es una breve descripción de la segunda publicación.',
     }
   ];
+
+  ngOnInit() {
+    this.instagramService.obtenerPublicaciones().subscribe(data => {
+      this.publicaciones = data.data;
+    });
+  }
 }

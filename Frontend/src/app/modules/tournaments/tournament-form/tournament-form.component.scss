@@ -1,27 +1,71 @@
-.inscripcion-container {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    padding: 110px;
-  }
-  
-  .inscripcion-card {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-  }
-  
-  .inscripcion-form {
+.tournament-registration {
+    max-width: 800px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .prueba-item {
-    margin-bottom: 15px;
-  }
-  
-  .prueba-field {
-    width: 100%;
-  }
-  
+    padding: 40px;
+}
+
+.registration-card {
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.prueba-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.prueba-texto {
+  font-size: 1.5rem; /* Aumenta el tamaño */
+  font-weight: bold; /* Hace el texto más grueso */
+  color: #1976d2; /* Cambia el color */
+}
+
+
+
+/* Botón Inscribirse */
+button[color="primary"] {
+    background-color: #24a528; /* Verde más suave */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+button[color="primary"]:hover {
+    background-color: #167f14;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón Cancelar */
+button[color="warn"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button[color="warn"]:hover {
+    opacity: 1;
+}

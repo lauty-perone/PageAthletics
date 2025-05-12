@@ -1,5 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { debounceTime, Observable } from 'rxjs';
 
 
 @Injectable({
@@ -7,7 +8,7 @@ import { Injectable } from '@angular/core';
 })
 
 export class PersonaService {
-  private apiUrl = 'https://localhost:5000/api/persona'; // Cambia la URL según tu backend
+  private apiUrl = 'https://localhost:44379/api/persona'; // Cambia la URL según tu backend
 
   constructor(private http: HttpClient) {}
 
@@ -20,8 +21,7 @@ export class PersonaService {
 
     
     return this.http.get(this.apiUrl, { params : parametros});
-
-}
+  }
 
   
 }

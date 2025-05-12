@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 
 export class TournamentsService {
 
-  private apiUrl = 'https://localhost:5000/api/torneo'; 
+  private apiUrl = 'https://localhost:44379/api/torneo'; 
 
   constructor(private http: HttpClient) {}
 
@@ -26,6 +26,11 @@ export class TournamentsService {
     });
 
         return this.http.post<Tournament>(this.apiUrl, torneo, {headers});
-  }
+    }
+
+    getTorneoPorId(id: number): Observable<Tournament> {
+      
+      return this.http.get<Tournament>(this.apiUrl + `/${id}`);
+    }
 
 }

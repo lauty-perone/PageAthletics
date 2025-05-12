@@ -6,12 +6,19 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
+    .Build();
+
+
 // Agregar servicios al contenedor
 builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mi API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Application" });
 });
 
 // Configurar Swagger
@@ -22,6 +29,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
 });
+
+
 
 // Configurar CORS
 builder.Services.AddCors(options =>

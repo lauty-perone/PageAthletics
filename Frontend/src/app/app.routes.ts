@@ -21,7 +21,9 @@ export const routes: Routes = [
     { path : 'resultados', component:ResultsComponent},
     { path : 'torneos', component:TournamentsComponent},
     { path : 'contacto', component:ContactComponent},
-    { path : 'formulario', component:TournamentFormComponent},
+
+    { path: 'formulario/:idTorneo', component: TournamentFormComponent },
+    
     { path : 'perfil', component:ProfileComponent},
     { path : 'crearTorneo', component:CreateTournamentComponent}
 

@@ -1,8 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { Tournament } from '../../../models/Torneo';
+import { TournamentsService } from '../../../services/tournaments.service';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-tournament-form',
@@ -11,39 +17,39 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatCardModule,
     MatFormFieldModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatListModule,
+    MatCheckboxModule,
+    MatInputModule,
+    RouterLink
   ],
   templateUrl: './tournament-form.component.html',
   styleUrls: ['./tournament-form.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TournamentFormComponent {
-  pruebas = [
-    { nombre: '100 Metros', id: 'prueba100m' },
-    { nombre: '400 Metros', id: 'prueba400m' },
-    { nombre: 'Salto En Largo', id: 'pruebaSaltoLargo' },
-    { nombre: 'Lanzamiento de Jabalina', id: 'pruebaJabalina' }
-  ];
+export class TournamentFormComponent implements OnInit{
 
-  inscripcionForm: FormGroup;
+  selectedTournament!: Tournament;
+  torneoId!: number;
+  formulario! : FormGroup
 
-  constructor(private fb: FormBuilder) {
-    // Inicializa el formulario reactivo
-    const group: any = {};
-    this.pruebas.forEach((prueba) => {
-      group[prueba.id] = new FormControl('', Validators.required);
+  constructor(private route: ActivatedRoute, private torneoService: TournamentsService) {
+  }
+
+  ngOnInit(): void {
+    // Obtener el ID del torneo desde la URL
+    this.torneoId = Number(this.route.snapshot.paramMap.get('idTorneo'));
+    
+    // Buscar los datos del torneo con ese ID
+    this.torneoService.getTorneoPorId(this.torneoId).subscribe(torneo => {
+      this.selectedTournament = torneo;
     });
-    this.inscripcionForm = this.fb.group(group);
   }
 
-  onSubmit() {
-    if (this.inscripcionForm.valid) {
-      console.log('Datos de inscripción:', this.inscripcionForm.value);
-      // Procesar datos, enviar al backend, etc.
-    } else {
-      console.error('El formulario contiene errores.');
-    }
+  inscribirse() {
+  
   }
+  
 
   
 } 

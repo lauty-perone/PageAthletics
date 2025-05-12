@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PaginaAtletismo Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56ff473639275d01a20aabb9c685377d2beeb4aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f498bced839a65c2bbb2945a7cd6a76b3d6707e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PaginaAtletismo Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PaginaAtletismo Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

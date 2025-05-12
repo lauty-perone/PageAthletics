@@ -30,16 +30,12 @@ export class TournamentsComponent implements OnInit {
   ngOnInit() {
     this.showTournaments();
   }
-
+  
   showTournaments(){
     this.tournamentService.getTorneos().subscribe({
       next: (respuesta) => {
         this.tournaments = respuesta;
         this.cdr.markForCheck();
-        console.log('Torneos obtenidos:', respuesta);
-      },
-      error: (error) => {
-        console.error('Error al obtener torneos:', error);
       }
     });
   }
