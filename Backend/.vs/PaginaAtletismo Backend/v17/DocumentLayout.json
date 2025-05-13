@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lauty\\desktop\\p\u00E1gina atletismo\\paginaatletismo backend\\paginaatletismo backend\\controllers\\tournamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\controllers\\tournamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\controllers\\tournamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lauty\\desktop\\p\u00E1gina atletismo\\paginaatletismo backend\\paginaatletismo backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lauty\\desktop\\p\u00E1gina atletismo\\paginaatletismo backend\\paginaatletismo backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lauty\\desktop\\p\u00E1gina atletismo\\paginaatletismo backend\\paginaatletismo backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -25,63 +29,80 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 58,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 316,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TournamentController.cs",
-              "DocumentMoniker": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
+              "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
               "RelativeDocumentMoniker": "PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
-              "ToolTip": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
+              "ToolTip": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
               "RelativeToolTip": "PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswAgAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T23:27:19.334Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Program.cs",
               "RelativeDocumentMoniker": "PaginaAtletismo Backend\\Program.cs",
-              "ToolTip": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Program.cs",
               "RelativeToolTip": "PaginaAtletismo Backend\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T23:15:42.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "PaginaAtletismo Backend\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Controllers\\UserController.cs",
               "RelativeToolTip": "PaginaAtletismo Backend\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T21:56:37.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T21:56:37.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "PaginaAtletismo Backend\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\lauty\\Desktop\\P\u00E1gina Atletismo\\PaginaAtletismo Backend\\PaginaAtletismo Backend\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Data\\AppDbContext.cs",
               "RelativeToolTip": "PaginaAtletismo Backend\\Data\\AppDbContext.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAIwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T21:46:44.683Z",
+              "WhenOpened": "2025-05-01T21:46:44.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "PaginaAtletismo Backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\appsettings.json",
+              "RelativeToolTip": "PaginaAtletismo Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-12T13:02:39.39Z",
               "EditorCaption": ""
             }
           ]
