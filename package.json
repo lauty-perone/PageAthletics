@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "@types/google.picker": "^0.0.50"
-  },
-  "dependencies": {
-    "@angular/cli": "^19.2.11"
-  }
-}
