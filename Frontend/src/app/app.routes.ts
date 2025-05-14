@@ -12,19 +12,29 @@ import { ProfileComponent } from './users/profile/profile.component';
 import { CreateTournamentComponent } from './admin/create-tournament/create-tournament.component';
 
 export const routes: Routes = [
-    { path :  '',component:MainComponent},
+    {
+        path : '',
+        redirectTo : '/main'
+    }
+    
+    { path :  'main',component:MainComponent},
+    
     { path: 'login' , component:LoginComponent},
-    { path : 'header', component:HeaderComponent},
     
     { path : 'noticias', component:NewsComponent},
+    
     { path : 'atletas', component:AthletesComponent},
+    
     { path : 'resultados', component:ResultsComponent},
+    
     { path : 'torneos', component:TournamentsComponent},
+    
     { path : 'contacto', component:ContactComponent},
 
     { path: 'formulario/:idTorneo', component: TournamentFormComponent },
     
     { path : 'perfil', component:ProfileComponent},
+    
     { path : 'crearTorneo', component:CreateTournamentComponent}
 
 ];
