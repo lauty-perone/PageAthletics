@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
-import { HeaderComponent } from './modules/header/header.component';
 import { NewsComponent } from './modules/news/news.component';
 import { AthletesComponent } from './modules/athletes/athletes.component';
 import { ResultsComponent } from './modules/results/results.component';
@@ -15,7 +14,7 @@ export const routes: Routes = [
     {
         path : '',
         redirectTo : '/main'
-    }
+    },
     
     { path :  'main',component:MainComponent},
     
