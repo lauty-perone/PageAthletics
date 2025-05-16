@@ -11,12 +11,8 @@ import { ProfileComponent } from './users/profile/profile.component';
 import { CreateTournamentComponent } from './admin/create-tournament/create-tournament.component';
 
 export const routes: Routes = [
-    {
-        path : '',
-        redirectTo : '/main'
-    },
-    
-    { path :  'main',component:MainComponent},
+        
+    { path :  '',component:MainComponent},
     
     { path: 'login' , component:LoginComponent},
     
