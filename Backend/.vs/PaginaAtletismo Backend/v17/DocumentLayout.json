@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\controllers\\tournamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\controllers\\tournamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|solutionrelative:paginaatletismo backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F62B0D8-2874-4B26-9DD2-E5A4B4E7DAE8}|PaginaAtletismo Backend\\PaginaAtletismo Backend.csproj|c:\\users\\lperone\\desktop\\pageathletics\\backend\\paginaatletismo backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,22 +29,24 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 49,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 325,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 325,
-          "SelectedChildIndex": 2,
-          "Children": [
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TournamentController.cs",
               "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
               "RelativeDocumentMoniker": "PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
@@ -52,8 +54,7 @@
               "RelativeToolTip": "PaginaAtletismo Backend\\Controllers\\TournamentController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAA9wEUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T23:27:19.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T23:27:19.334Z"
             },
             {
               "$type": "Document",
@@ -69,13 +70,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "PaginaAtletismo Backend\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\Controllers\\UserController.cs",
               "RelativeToolTip": "PaginaAtletismo Backend\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T21:56:37.774Z",
               "EditorCaption": ""
@@ -94,15 +95,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\appsettings.json",
               "RelativeDocumentMoniker": "PaginaAtletismo Backend\\appsettings.json",
               "ToolTip": "C:\\Users\\lperone\\Desktop\\PageAthletics\\Backend\\PaginaAtletismo Backend\\appsettings.json",
               "RelativeToolTip": "PaginaAtletismo Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-12T13:02:39.39Z"
+              "WhenOpened": "2025-05-12T13:02:39.39Z",
+              "EditorCaption": ""
             }
           ]
         }
