@@ -18,3 +18,11 @@
     justify-content: flex-end;
   }
   
+  .error-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: rgb(146, 114, 114);
+  font-weight: bold;
+}

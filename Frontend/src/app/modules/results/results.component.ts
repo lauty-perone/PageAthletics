@@ -3,12 +3,14 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { MatCardModule } from '@angular/material/card';
 import { Tournament } from '../../models/Torneo';
 import { TournamentsService } from '../../services/tournaments.service';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-results',
   imports: [
     MatCardModule,
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   templateUrl: './results.component.html',
   styleUrl: './results.component.scss',

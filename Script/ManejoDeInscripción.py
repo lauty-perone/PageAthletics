@@ -48,11 +48,6 @@ def series(df,parametro,tamanio_filas = 6):
         df_split.to_csv(path_completo, index=False)
 
 
-#"Marca temporal","Nombre","Apellido",
-# "Fecha de Nacimiento","Federación/ Asociación/Club","Seleccione género",
-# "Apto Médico","80 Metros","600 Metros","100 Metros","400 Metros","1500 Metros",
-# "3000 Metros","Pruebas de campo","Comprobante pago"  
-          
 def filtrar_80Metros(archivo):
     datos = archivo[archivo["80 Metros"] != None]
     columnas_borrar = ['Marca temporal', 'Seleccione su género',"600 Metros",
