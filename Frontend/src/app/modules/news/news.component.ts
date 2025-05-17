@@ -50,16 +50,6 @@ export class NewsComponent {
       image: 'img/front.jpg',
       title: 'Tercera Publicación',
       description: 'Esto es una breve descripción de la tercera publicación.',
-    },
-    {
-      image: 'img/unlp.png',
-      title: 'Cuarta Publicación',
-      description: 'Esto es una breve descripción de la primera publicación.',
-    },
-    {
-      image: 'img/largada.jpg',
-      title: 'Quinta Publicación',
-      description: 'Esto es una breve descripción de la segunda publicación.',
     }
   ];
 
