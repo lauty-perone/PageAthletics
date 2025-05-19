@@ -20,7 +20,7 @@
         "type": "coreclr",
         "request": "launch",
         "program": "${workspaceFolder}/Backend/PaginaAtletismo Backend/bin/Debug/net9.0/PaginaAtletismo Backend.dll",
-        "cwd": "${workspaceFolder}/Backend",
+        "cwd": "${workspaceFolder}/Backend/PaginaAtletismo Backend",
         "env": {
           "ASPNETCORE_ENVIRONMENT": "Development"
         }

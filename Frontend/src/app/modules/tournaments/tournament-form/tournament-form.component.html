@@ -10,16 +10,25 @@
       <p><strong>Fecha:</strong> {{ selectedTournament.fechaTorneo | date:'dd/MM/yyyy' }}</p>
 
       <h3>Pruebas disponibles:</h3>
-      
-        <mat-list-item *ngFor="let prueba of selectedTournament.pruebas">
+
+      <div class="grid-container">
+      <div *ngFor="let prueba of selectedTournament.pruebas" class="prueba-item">
+        <div class="checkbox-container">
           <mat-checkbox class="prueba-texto">{{ prueba }}</mat-checkbox>
-          <mat-form-field class="marca-input">
-            <mat-label>Marca registrada</mat-label>
-            <input matInput type="time"> 
-          </mat-form-field>
-        </mat-list-item>
-        
+        </div>
+          <div class="input-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Marca</mat-label>
+              <input matInput type="time" class="input">
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+
+
     </mat-card-content>
+
 
     <mat-card-actions>
       <button mat-button color="primary" (click)="inscribirse()">

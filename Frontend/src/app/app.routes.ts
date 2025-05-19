@@ -9,11 +9,15 @@ import { MainComponent } from './modules/main/main/main.component';
 import { TournamentFormComponent } from './modules/tournaments/tournament-form/tournament-form.component';
 import { ProfileComponent } from './users/profile/profile.component';
 import { CreateTournamentComponent } from './admin/create-tournament/create-tournament.component';
+import { AcceptCoachsComponent } from './admin/accept-coachs/accept-coachs.component';
 
 export const routes: Routes = [
         
+
+    //Falta hacer el routing para los roles "Admin", "Entrenador", "Atletas"
     { path :  '',component:MainComponent},
     
+    //Hay que deshabilitar el login una vez que ya Inicio Sesión para que aparezca el menú.
     { path: 'login' , component:LoginComponent},
     
     { path : 'noticias', component:NewsComponent},
@@ -30,6 +34,8 @@ export const routes: Routes = [
     
     { path : 'perfil', component:ProfileComponent},
     
-    { path : 'crearTorneo', component:CreateTournamentComponent}
+    { path : 'crearTorneo', component:CreateTournamentComponent},
+
+    { path: 'aceptarEntrenadores', component: AcceptCoachsComponent}
 
 ];

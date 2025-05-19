@@ -9,7 +9,7 @@
           "kind": "build",
           "isDefault": true
         },
-        "cwd": "${workspaceFolder}/Backend"
+        "cwd": "${workspaceFolder}/Backend/PaginaAtletismo Backend"
       }
     ]
   }

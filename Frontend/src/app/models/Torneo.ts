@@ -1,11 +1,11 @@
 export interface Tournament {
     idTorneo?: number;
     name: string;
-    fechaTorneo: string;
+    fechaTorneo: Date;
     lugar: string;
     resultadosUrl?: string;
-    fechaInicioInscripcion: string;
-    fechaFinInscripcion: string;
+    fechaInicioInscripcion: Date;
+    fechaFinInscripcion: Date;
     cantidadCarriles: number;
     pruebas: string[];
   }

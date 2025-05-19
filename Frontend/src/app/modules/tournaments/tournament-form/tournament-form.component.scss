@@ -1,8 +1,6 @@
 .tournament-registration {
     max-width: 800px;
     margin: 40px auto;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     padding: 40px;
 }
@@ -18,21 +16,6 @@ mat-card-content {
     flex-direction: column;
     gap: 12px;
 }
-
-.prueba-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-
-.prueba-texto {
-  font-size: 1.5rem; /* Aumenta el tamaño */
-  font-weight: bold; /* Hace el texto más grueso */
-  color: #1976d2; /* Cambia el color */
-}
-
-
 
 /* Botón Inscribirse */
 button[color="primary"] {
@@ -69,3 +52,82 @@ button[color="warn"] {
 button[color="warn"]:hover {
     opacity: 1;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas: una para checkboxes, otra para inputs */
+  gap: 20px; /* Espaciado entre las filas */
+}
+
+.prueba-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Cada prueba tiene dos columnas */
+  align-items: center;
+  gap: 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start; /* Alinea los checkboxes a la izquierda */
+}
+
+.input-container {
+  display: flex;
+  justify-content: flex-start; /* Alinea los inputs a la derecha */
+}
+
+mat-form-field {
+  width: 120px; /* Ajusta el tamaño para evitar desbordamientos */
+}
+
+.input {
+  text-align: center; /* Asegura que el valor dentro del input se vea alineado */
+}
+
+.prueba-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px; /* Bordes redondeados más elegantes */
+  background: linear-gradient(135deg, #2196F3, #1E88E5); /* Azul moderno */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra más suave */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Alternar tonos de azul en cada fila */
+.prueba-item:nth-child(even) {
+  background: linear-gradient(135deg, #64B5F6, #42A5F5);
+}
+
+/* Efecto hover para mejor interacción */
+.prueba-item:hover {
+  background: linear-gradient(135deg, #1E88E5, #1565C0);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilizar el checkbox para que se integre bien */
+mat-checkbox {
+  color: white !important;
+}
+
+/* Ajuste del input para que encaje mejor con el fondo */
+mat-form-field {
+  width: 120px;
+  border-radius: 8px;
+}
+
+.input-container input {
+  background: transparent;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+}
+
+
+
+
+
