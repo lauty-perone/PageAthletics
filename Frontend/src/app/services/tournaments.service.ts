@@ -28,7 +28,7 @@ export class TournamentsService {
         return this.http.post<Tournament>(this.apiUrl, torneo, {headers});
     }
 
-    getTorneoPorId(id: number): Observable<Tournament> {
+    getTorneoPorId(id: string): Observable<Tournament> {
       
       return this.http.get<Tournament>(this.apiUrl + `/${id}`);
     }

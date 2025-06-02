@@ -44,12 +44,17 @@ export class TournamentFormComponent implements OnInit{
     this.torneoService.getTorneoPorId(this.torneoId).subscribe(torneo => {
       this.selectedTournament = torneo;
     });
+
+    // Inicializar el FormGroup con los campos de la inscripción
+    this.formulario = new FormGroup({
+      pruebas: new FormControl([]), // Array para guardar las pruebas seleccionadas
+      marcas: new FormControl({}) // Objeto para guardar las marcas ingresadas
+    });
   }
 
   inscribirse() {
-  
+      console.log(this.formulario.value);
   }
   
-
   
 } 

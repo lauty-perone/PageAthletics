@@ -12,21 +12,25 @@
       <h3>Pruebas disponibles:</h3>
 
       <div class="grid-container">
-      <div *ngFor="let prueba of selectedTournament.pruebas" class="prueba-item">
-        <div class="checkbox-container">
-          <mat-checkbox class="prueba-texto">{{ prueba }}</mat-checkbox>
-        </div>
-          <div class="input-container">
+        <div *ngFor="let prueba of selectedTournament.pruebas" class="prueba-item">
+            
+            <mat-checkbox 
+                [formGroup] = formulario
+                formControlName="pruebas">
+                  {{ prueba }}
+            </mat-checkbox>
+
             <mat-form-field appearance="outline">
               <mat-label>Marca</mat-label>
-              <input matInput type="time" class="input">
+              <input matInput placeholder="mm.ss.cc" 
+                  [formGroup] = formulario
+                  formControlName="marcas">
             </mat-form-field>
-          </div>
+          
         </div>
       </div>
 
-
-
+      
     </mat-card-content>
 
 

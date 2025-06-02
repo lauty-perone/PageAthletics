@@ -50,5 +50,24 @@
   }
   
   
+  .btn-editar {
+  background-color: #ff9800; /* Naranja vibrante */
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-editar:hover {
+  background-color: #e68900; /* Cambio de color al pasar el mouse */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
   
   
