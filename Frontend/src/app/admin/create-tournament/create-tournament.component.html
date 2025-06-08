@@ -2,7 +2,11 @@
     
     <div class="form-container">
 
-        <h2 class="titulo-formulario">Crear Torneo</h2>
+        @if(!editar){
+          <h2 class="titulo-formulario">Crear Torneo</h2>
+        }@else {
+          <h2 class="titulo-formulario">Editar Torneo</h2>
+        }
         <form [formGroup]="torneoForm">
           <div class="form-grid">
             <mat-form-field appearance="outline">
@@ -24,7 +28,10 @@
       
             <mat-form-field appearance="outline">
               <mat-label>Cantidad de Carriles</mat-label>
-              <input matInput type="number" formControlName="cantidadCarriles" min="1">
+              <!-- <input matInput type="number" formControlName="cantidadCarriles" min="6"> -->
+              <mat-select formControlName="cantidadCarriles">
+                <mat-option *ngFor="let carril of carriles" [value]="carril">{{ carril }}</mat-option>
+              </mat-select>
             </mat-form-field>
       
             <mat-form-field appearance="outline">

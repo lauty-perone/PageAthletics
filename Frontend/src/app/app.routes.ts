@@ -10,6 +10,7 @@ import { TournamentFormComponent } from './modules/tournaments/tournament-form/t
 import { ProfileComponent } from './users/profile/profile.component';
 import { CreateTournamentComponent } from './admin/create-tournament/create-tournament.component';
 import { AcceptCoachsComponent } from './admin/accept-coachs/accept-coachs.component';
+import { EditTournamentComponent } from './admin/edit-tournament/edit-tournament.component';
 
 export const routes: Routes = [
         
@@ -36,6 +37,9 @@ export const routes: Routes = [
     
     { path : 'crearTorneo', component:CreateTournamentComponent},
 
-    { path: 'aceptarEntrenadores', component: AcceptCoachsComponent}
+    { path: 'aceptarEntrenadores', component: AcceptCoachsComponent},
+
+    { path: 'editarTorneo/:idTorneo', component: EditTournamentComponent}
+
 
 ];

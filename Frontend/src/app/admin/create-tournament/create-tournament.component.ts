@@ -34,6 +34,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class CreateTournamentComponent {
 
   torneoForm: FormGroup;
+  editar: boolean = false;
 
   pruebasDisponibles: string[] = [
     '60','80','100','200', '300','400','600','800', '1500', '3000','5000', '10000',
@@ -42,6 +43,8 @@ export class CreateTournamentComponent {
     'Salto con garrocha', 'Bala', 'Disco', 'Jabalina','Martillo', '100 C/V',
     '110 C/V','295 C/V','400 C/V' 
   ];
+
+  carriles: number[] = [ 6 , 8, 9 ]
 
   constructor(private fb: FormBuilder, private tournamentService: TournamentsService
     , private snackBar: MatSnackBar) {
